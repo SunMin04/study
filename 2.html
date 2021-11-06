@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <input id="text" type="text" value="hello">
+        <button id="btn" onclick="func()">click</button>
+        <h1 id="h1">Hello World</h1>
+        <img id="img" src="https://mblogthumb-phinf.pstatic.net/MjAxNzA3MjZfMjky/MDAxNTAxMDYwMzYyNjAz.atpFWEQxBwdz0wUHUh6weuecP1uYwXFDZEKMmXJ7E9og.0v8HzKMWvtfgpFAzyFxZBwx9U0OAfy1Wvdxp54FNV2Qg.JPEG.citymedia1/2017-07-26_18-09-21.jpg?type=w800">
+        
+        <script>
+            function func() {
+                var text = document.getElementById('text').value;
+                document.getElementById('img').src = text;
+                //document.getElementById('h1').innerHTML = text;
+                //console.dir(document.getElementById('text').value)
+            }
+                //console.log(document.getElementsById('text').value)
+        </script>
+    </body>
+</html>
