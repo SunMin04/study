@@ -1,0 +1,22 @@
+<script>
+    class Person{
+        x=0
+        y=0
+        left(){
+            return this.x-=1;
+        }
+        right(){
+            return this.x+=1;
+        }
+        up(){
+            return this.y-=1;
+        }
+        down(){
+            return this.y+=1;
+        }
+        get postion(){
+            return this.x+","+this.y
+        }
+    }
+    a= new Person()
+</script>

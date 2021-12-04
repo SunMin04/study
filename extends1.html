@@ -1,0 +1,27 @@
+<script>
+    class Car{
+        model='';birth='';pay='';company='';
+        
+        constructor(model,birth,pay,company){
+            this.model=model
+            this.birth=birth
+            this.pay=pay
+            this.company=company
+        }
+        print(){
+            console.log(this.birth+"년도에 출고된"+this.company+"의 "+this.model+"은 "+this.pay+"원입니다.")
+        }
+    }
+    class BMW extends Car{
+        constructor(model,birth,pay){
+            super(model,birth,pay)
+            super.company='BMW'
+        }
+    }
+    class Kia extends Car{   
+        constructor(model,birth,pay){
+            super(model,birth,pay)
+            super.company='Kia'
+        }
+    }
+</script>

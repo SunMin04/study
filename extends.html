@@ -1,0 +1,21 @@
+<script>
+    class A{
+        num=5
+        print(){
+            console.log(this.num)
+        }
+        constructor (name){
+            this.name=name
+        }
+    }
+    class B extends A{
+        get number(){
+            return this.num*2;
+        }
+        constructor (name){
+            super.name
+        }
+    }
+    a= new A()
+    b= new B()
+</script>

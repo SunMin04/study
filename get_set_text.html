@@ -1,0 +1,13 @@
+<script>
+    class A {
+        num=0
+        get number(){
+            console.log("getter number가 호출됨")
+            return this.num*2
+        }
+        set number(val){
+            console.log("setter number가 호출됨")
+            this.num =val *3;
+        }
+    }
+</script>
